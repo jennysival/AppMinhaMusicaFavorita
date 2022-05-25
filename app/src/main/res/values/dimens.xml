@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="altura_250">250dp</dimen>
+    <dimen name="tamanho_fonte_16">16sp</dimen>
+    <dimen name="tamanho_fonte_10">10sp</dimen>
+    <dimen name="margem_50">50dp</dimen>
+    <dimen name="margem_20">20dp</dimen>
+</resources>
