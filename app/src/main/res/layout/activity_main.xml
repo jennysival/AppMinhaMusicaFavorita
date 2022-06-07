@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:text="@string/texto_titulo_musica"
             android:textSize="@dimen/tamanho_fonte_16"
+            android:textColor="@color/black"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/margem_20"/>
 
@@ -27,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(part. Gilberto Gil)"
+            android:textColor="@color/black"
             android:textSize="@dimen/tamanho_fonte_10"
             android:layout_gravity="center"/>
 
@@ -34,10 +36,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/margem_50"
-            android:layout_marginBottom="@dimen/margem_50"
+            android:layout_marginBottom="@dimen/margem_20"
             android:layout_marginTop="@dimen/margem_20"
             android:textAlignment="center"
-            android:text="@string/texto_letra_musica"/>
+            android:text="@string/texto_letra_musica"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_detalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/texto_botao_detalhes"
+            android:textAllCaps="true"
+            android:layout_marginHorizontal="@dimen/margem_20"
+            android:layout_marginBottom="@dimen/margem_50"/>
+
 
     </LinearLayout>
 
