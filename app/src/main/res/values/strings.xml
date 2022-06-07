@@ -6,4 +6,7 @@
     <string name="texto_botao_detalhes">Ver Detalhes</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="descricao_retrato_emicida">Foto do Emicida de olhos fechados, braços cruzados apoiados em uma cadeira de madeira. Fundo azul escuro</string>
+    <string name="texto_emicida">Emicida</string>
+    <string name="texto_descricao">Leandro Roque de Oliveira, mais conhecido pelo nome artístico Emicida, é um rapper, cantor, letrista e compositor brasileiro. É considerado uma das maiores revelações do hip hop do Brasil da década de 2000. O nome \'Emicida\' é uma fusão das palavras \'MC\' e \'homicida\'.</string>
 </resources>
