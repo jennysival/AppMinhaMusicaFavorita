@@ -5,4 +5,5 @@
     <dimen name="tamanho_fonte_10">10sp</dimen>
     <dimen name="margem_50">50dp</dimen>
     <dimen name="margem_20">20dp</dimen>
+    <dimen name="altura_0">0dp</dimen>
 </resources>
