@@ -16,13 +16,13 @@ class Album(
     private var genero: String
 ): Parcelable {
 
-    fun getImagem() = imagem
-    fun getTitulo() = titulo
-    fun getDescricao() = descricao
-    fun getLancamento() = lancamento
-    fun getGravadora() = gravadora
-    fun getEstudio() = estudio
-    fun getFormato() = formato
-    fun getGenero() = genero
+    fun getImagem() = this.imagem
+    fun getTitulo() = this.titulo
+    fun getDescricao() = this.descricao
+    fun getLancamento() = this.lancamento
+    fun getGravadora() = this.gravadora
+    fun getEstudio() = this.estudio
+    fun getFormato() = this.formato
+    fun getGenero() = this.genero
 
 }
