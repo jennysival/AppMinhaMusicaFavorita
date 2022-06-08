@@ -6,6 +6,7 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 
 class Album(
+    private var imagem: Int,
     private var titulo: String,
     private var descricao: String,
     private var lancamento: String,
