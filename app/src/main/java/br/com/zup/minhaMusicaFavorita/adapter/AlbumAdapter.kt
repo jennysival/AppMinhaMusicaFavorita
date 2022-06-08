@@ -13,8 +13,8 @@ class AlbumAdapter(
 
     class ViewHolder(val binding: AlbumItemBinding): RecyclerView.ViewHolder(binding.root){
 
-        fun exibirAlbum(){
-
+        fun adicionarAlbumNaView(album: Album){
+            binding.ivAlbumNaLista.setImageResource(album.getImagem())
         }
     }
 
@@ -24,10 +24,24 @@ class AlbumAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val album = listaDeAlbuns[position]
+        holder.adicionarAlbumNaView(album)
+        holder.binding.cvAlbumItem.setOnClickListener {
+            clickNoAlbum(album)
+        }
     }
 
     override fun getItemCount(): Int {
         return listaDeAlbuns.size
+    }
+
+    fun atualizarListaAlbuns(novaLista: MutableList<Album>){
+        if(listaDeAlbuns.size == 0){
+            listaDeAlbuns = novaLista
+        }
+        else{
+            listaDeAlbuns.addAll(novaLista)
+        }
+        notifyDataSetChanged()
     }
 }
