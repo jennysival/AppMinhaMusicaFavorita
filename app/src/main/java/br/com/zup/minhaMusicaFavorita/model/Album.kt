@@ -16,6 +16,13 @@ class Album(
     private var genero: String
 ): Parcelable {
 
-    private val artista = "Emicida"
+    fun getImagem() = imagem
+    fun getTitulo() = titulo
+    fun getDescricao() = descricao
+    fun getLancamento() = lancamento
+    fun getGravadora() = gravadora
+    fun getEstudio() = estudio
+    fun getFormato() = formato
+    fun getGenero() = genero
 
 }
