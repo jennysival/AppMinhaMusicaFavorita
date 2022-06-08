@@ -9,6 +9,7 @@ import br.com.zup.minhaMusicaFavorita.model.Album
 class AlbumAdapter(
     private var listaDeAlbuns: MutableList<Album>,
     private val clickNoAlbum: (album: Album) -> Unit
+
 ): RecyclerView.Adapter<AlbumAdapter.ViewHolder>() {
 
     class ViewHolder(val binding: AlbumItemBinding): RecyclerView.ViewHolder(binding.root){

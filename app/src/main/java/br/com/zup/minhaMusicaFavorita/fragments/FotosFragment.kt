@@ -33,12 +33,12 @@ class FotosFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         adicionarAlbumNaLista()
+
     }
 
     private fun exibirRecycler(){
         binding.rvListaAlbuns.adapter = albumAdapter
         binding.rvListaAlbuns.layoutManager = GridLayoutManager(context,2)
-
     }
 
     private fun adicionarAlbumNaLista(){
@@ -75,12 +75,17 @@ class FotosFragment : Fragment() {
             GRAVADORA_OLOKO, ESTUDIO_ALBUM6, FORMATO_CD_ALBUM, GENERO_HIPHOP))
 
         albumAdapter.atualizarListaAlbuns(listaAlbuns)
+
         exibirRecycler()
 
     }
 
     private fun irParaDetalheAlbum(album: Album){
         val bundle = bundleOf(CHAVE_ALBUM to album)
-        startActivity(Intent(context, DetalhesAlbum::class.java),bundle)
+
+        val intent = Intent(context, DetalhesAlbum::class.java)
+        intent.putExtra(CHAVE_ALBUM, album)
+        startActivity(intent)
+
     }
 }

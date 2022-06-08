@@ -15,4 +15,6 @@
     <dimen name="margem_10">10dp</dimen>
     <dimen name="margem_5">5dp</dimen>
     <dimen name="margem_30">30dp</dimen>
+    <dimen name="largura_150">150dp</dimen>
+    <dimen name="altura_150">150dp</dimen>
 </resources>
