@@ -208,10 +208,9 @@
         android:textSize="@dimen/tamanho_fonte_12"
         android:layout_marginTop="@dimen/margem_10"
         android:layout_marginLeft="@dimen/margem_16"
-        android:layout_marginBottom="@dimen/margem_50"
+        android:layout_marginBottom="@dimen/margem_16"
         app:layout_constraintTop_toBottomOf="@id/tv_FormatoBold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tv_insiraGeneros"
@@ -221,13 +220,29 @@
         android:textSize="@dimen/tamanho_fonte_12"
         android:textColor="@color/black"
         android:layout_marginTop="@dimen/margem_10"
-        android:layout_marginBottom="@dimen/margem_50"
+        android:layout_marginBottom="@dimen/margem_16"
         android:layout_marginLeft="@dimen/margem_5"
         android:layout_marginRight="@dimen/margem_16"
         app:layout_constraintTop_toBottomOf="@id/tv_insiraFormato"
         app:layout_constraintStart_toEndOf="@id/tv_GeneroBold"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_icon_fav"
+        android:layout_width="@dimen/largura_50"
+        android:layout_height="@dimen/altura_50"
+        android:src="@drawable/fav_icon"
+        android:contentDescription="Ícone de coração"
+        android:layout_marginLeft="@dimen/margem_300"
+        android:layout_marginRight="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_20"
+        android:layout_marginTop="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_insiraGeneros"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
+
+
 
 
 
