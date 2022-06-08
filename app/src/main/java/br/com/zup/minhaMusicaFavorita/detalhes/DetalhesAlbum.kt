@@ -3,6 +3,7 @@ package br.com.zup.minhaMusicaFavorita.detalhes
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import br.com.zup.minhaMusicaFavorita.R
 import br.com.zup.minhaMusicaFavorita.databinding.ActivityDetalhesAlbumBinding
 import br.com.zup.minhaMusicaFavorita.model.Album
@@ -17,6 +18,10 @@ class DetalhesAlbum : AppCompatActivity() {
         setContentView(binding.root)
 
         recuperarDadosAlbum()
+
+        binding.ivIconFav.setOnClickListener {
+            Toast.makeText(this, getString(R.string.msg_toast), Toast.LENGTH_LONG).show()
+        }
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setTitle(R.string.detalhes_album)
