@@ -1,9 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".detalhes.DetalhesAlbum">
 
+    <ImageView
+        android:id="@+id/iv_imagemAlbum"
+        android:layout_width="@dimen/largura_250"
+        android:layout_height="@dimen/altura_250"
+        android:src="@drawable/foto_retrato_emicida"
+        android:contentDescription="@string/descricao_retrato_emicida"
+        android:scaleType="centerCrop"
+        android:layout_margin="@dimen/margem_16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_tituloAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_nome_album"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamanho_fonte_16"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/iv_imagemAlbum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_descricaoAlbum"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_descricaoAlbum"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:textAlignment="center"
+        android:layout_margin="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_tituloAlbum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_ArtistaBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artista:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:layout_marginTop="@dimen/margem_50"
+        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_descricaoAlbum"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_nomeArtista"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="Emicida"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margem_50"
+        android:layout_marginBottom="@dimen/margem_16"
+        android:layout_marginLeft="@dimen/margem_5"
+        android:layout_marginRight="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_descricaoAlbum"
+        app:layout_constraintStart_toEndOf="@id/tv_ArtistaBold"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_LancamentoBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lançamento:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_ArtistaBold"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_insiraLancamento"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="Inserir o lançamento"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginBottom="@dimen/margem_16"
+        android:layout_marginLeft="@dimen/margem_5"
+        android:layout_marginRight="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_nomeArtista"
+        app:layout_constraintStart_toEndOf="@id/tv_LancamentoBold"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_GravadoraBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gravadora:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_LancamentoBold"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_insiraGravadora"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="Inserir a gravadora"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginBottom="@dimen/margem_16"
+        android:layout_marginLeft="@dimen/margem_5"
+        android:layout_marginRight="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_insiraLancamento"
+        app:layout_constraintStart_toEndOf="@id/tv_GravadoraBold"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_EstudioBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estúdio(s):"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_GravadoraBold"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_insiraEstudio"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="Inserir o estúdio"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginBottom="@dimen/margem_16"
+        android:layout_marginLeft="@dimen/margem_5"
+        android:layout_marginRight="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_insiraGravadora"
+        app:layout_constraintStart_toEndOf="@id/tv_EstudioBold"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_FormatoBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formato(s):"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_EstudioBold"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_insiraFormato"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="Inserir o formato"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginBottom="@dimen/margem_16"
+        android:layout_marginLeft="@dimen/margem_5"
+        android:layout_marginRight="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_insiraEstudio"
+        app:layout_constraintStart_toEndOf="@id/tv_FormatoBold"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_GeneroBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gêneros:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_50"
+        app:layout_constraintTop_toBottomOf="@id/tv_FormatoBold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_insiraGeneros"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="Inserir os gêneros"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginBottom="@dimen/margem_50"
+        android:layout_marginLeft="@dimen/margem_5"
+        android:layout_marginRight="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_insiraFormato"
+        app:layout_constraintStart_toEndOf="@id/tv_GeneroBold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
