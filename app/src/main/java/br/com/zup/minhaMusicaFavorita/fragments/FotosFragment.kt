@@ -23,7 +23,8 @@ class FotosFragment : Fragment() {
     private fun adicionarAlbumNaLista(){
         val listaAlbuns = mutableListOf<Album>()
 
-        listaAlbuns.add(Album(R.drawable.album1, TITULO_ALBUM1, DESCRICAO_ALBUM1, LANCAMENTO_2009,
+        listaAlbuns.add(Album(R.drawable.album1,
+            IMG_DESCR_ALBUM1,TITULO_ALBUM1, DESCRICAO_ALBUM1, LANCAMENTO_2009,
             GRAVADORA_LAB_FANTASMA, ESTUDIOS_ALBUM1, FORMATO_CD_MIX, GENERO_HIPHOP))
     }
 }

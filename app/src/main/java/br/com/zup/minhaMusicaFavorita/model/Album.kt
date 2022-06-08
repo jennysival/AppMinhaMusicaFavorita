@@ -7,6 +7,7 @@ import kotlinx.parcelize.Parcelize
 
 class Album(
     private var imagem: Int,
+    private var imagemDescricao: String,
     private var titulo: String,
     private var descricao: String,
     private var lancamento: String,
@@ -17,6 +18,7 @@ class Album(
 ): Parcelable {
 
     fun getImagem() = this.imagem
+    fun getImgDescr() = this.imagemDescricao
     fun getTitulo() = this.titulo
     fun getDescricao() = this.descricao
     fun getLancamento() = this.lancamento

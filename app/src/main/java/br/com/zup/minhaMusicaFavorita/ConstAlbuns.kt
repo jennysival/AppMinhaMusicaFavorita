@@ -1,5 +1,8 @@
 package br.com.zup.minhaMusicaFavorita
 
+//imagem descrição
+const val IMG_DESCR_ALBUM1 = "Desenho preto e brando de uma pessoa com cabeça de fita k7, escrito Emicida e Pra Quem Já Mordeu Um Cachorro Por Comida, Até Que Eu Cheguei Longe"
+
 //titulos
 const val TITULO_ALBUM1 = "Pra Quem Já Mordeu Um Cachorro Por Comida, Até Que Eu Cheguei Longe"
 const val TITULO_ALBUM2 = "Emicidio"
