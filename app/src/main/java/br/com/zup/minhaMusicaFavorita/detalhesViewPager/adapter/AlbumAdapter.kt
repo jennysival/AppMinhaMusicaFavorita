@@ -1,10 +1,10 @@
-package br.com.zup.minhaMusicaFavorita.adapter
+package br.com.zup.minhaMusicaFavorita.detalhesViewPager.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.zup.minhaMusicaFavorita.databinding.AlbumItemBinding
-import br.com.zup.minhaMusicaFavorita.model.Album
+import br.com.zup.minhaMusicaFavorita.detalhesViewPager.model.Album
 
 class AlbumAdapter(
     private var listaDeAlbuns: MutableList<Album>,

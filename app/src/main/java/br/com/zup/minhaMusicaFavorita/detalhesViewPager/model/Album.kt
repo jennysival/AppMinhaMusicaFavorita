@@ -1,4 +1,4 @@
-package br.com.zup.minhaMusicaFavorita.model
+package br.com.zup.minhaMusicaFavorita.detalhesViewPager.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

@@ -1,4 +1,4 @@
-package br.com.zup.minhaMusicaFavorita.fragments
+package br.com.zup.minhaMusicaFavorita.detalhesViewPager.fotos
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,10 +9,9 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.GridLayoutManager
 import br.com.zup.minhaMusicaFavorita.*
-import br.com.zup.minhaMusicaFavorita.adapter.AlbumAdapter
+import br.com.zup.minhaMusicaFavorita.detalhesViewPager.adapter.AlbumAdapter
 import br.com.zup.minhaMusicaFavorita.databinding.FragmentFotosBinding
-import br.com.zup.minhaMusicaFavorita.detalhes.DetalhesAlbum
-import br.com.zup.minhaMusicaFavorita.model.Album
+import br.com.zup.minhaMusicaFavorita.detalhesViewPager.model.Album
 import br.com.zup.minhaMusicaFavorita.utilitaria.CHAVE_ALBUM
 
 class FotosFragment : Fragment() {

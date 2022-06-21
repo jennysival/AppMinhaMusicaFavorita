@@ -1,4 +1,4 @@
-package br.com.zup.minhaMusicaFavorita.detalhes
+package br.com.zup.minhaMusicaFavorita.detalhesViewPager.fotos
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.view.MenuItem
 import android.widget.Toast
 import br.com.zup.minhaMusicaFavorita.R
 import br.com.zup.minhaMusicaFavorita.databinding.ActivityDetalhesAlbumBinding
-import br.com.zup.minhaMusicaFavorita.model.Album
+import br.com.zup.minhaMusicaFavorita.detalhesViewPager.model.Album
 import br.com.zup.minhaMusicaFavorita.utilitaria.CHAVE_ALBUM
 
 class DetalhesAlbum : AppCompatActivity() {

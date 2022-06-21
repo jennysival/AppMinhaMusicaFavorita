@@ -1,10 +1,10 @@
-package br.com.zup.minhaMusicaFavorita.detalhes
+package br.com.zup.minhaMusicaFavorita.detalhesViewPager
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import br.com.zup.minhaMusicaFavorita.R
-import br.com.zup.minhaMusicaFavorita.adapter.InformacoesPagerAdapter
+import br.com.zup.minhaMusicaFavorita.detalhesViewPager.adapter.InformacoesPagerAdapter
 import br.com.zup.minhaMusicaFavorita.databinding.ActivityDetalhesBinding
 import com.google.android.material.tabs.TabLayoutMediator
 

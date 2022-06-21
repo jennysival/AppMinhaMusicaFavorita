@@ -14,13 +14,13 @@
         android:theme="@style/Theme.MinhaMúsicaFavorita"
         tools:targetApi="31">
         <activity
-            android:name=".detalhes.DetalhesAlbum"
+            android:name=".detalhesViewPager.fotos.DetalhesAlbum"
             android:exported="false" />
         <activity
-            android:name=".detalhes.Detalhes"
+            android:name=".detalhesViewPager.Detalhes"
             android:exported="false" />
         <activity
-            android:name=".main.MainActivity"
+            android:name=".main.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
