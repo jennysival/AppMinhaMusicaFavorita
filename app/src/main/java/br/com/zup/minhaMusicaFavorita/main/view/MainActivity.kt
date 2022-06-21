@@ -32,6 +32,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun observables(){
+        viewModel.responseImage.observe(this) {
+            binding.ivFotoMain.setImageResource(it)
+        }
+
+        viewModel.responseTitle.observe(this) {
+            binding.tvTituloMain.text = it
+        }
+
+        viewModel.responseSubTitle.observe(this) {
+            binding.tvSubTituloMain.text = it
+        }
+
+        viewModel.responseLyrics.observe(this) {
+            binding.tvLetraMain.text = it
+        }
 
     }
 }
