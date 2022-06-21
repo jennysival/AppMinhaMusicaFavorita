@@ -1,4 +1,4 @@
-package br.com.zup.minhaMusicaFavorita.home
+package br.com.zup.minhaMusicaFavorita.main
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
