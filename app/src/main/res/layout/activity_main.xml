@@ -9,6 +9,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/iv_fotoMain"
             android:layout_width="match_parent"
             android:layout_height="@dimen/altura_250"
             android:scaleType="centerCrop"
@@ -16,6 +17,7 @@
             android:contentDescription="@string/descricao_foto_emicida"/>
 
         <TextView
+            android:id="@+id/tv_tituloMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="Titulo Genérico"
@@ -25,6 +27,7 @@
             android:layout_marginTop="@dimen/margem_20"/>
 
         <TextView
+            android:id="@+id/tv_subTituloMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="(subtitulo generico)"
@@ -33,6 +36,7 @@
             android:layout_gravity="center"/>
 
         <TextView
+            android:id="@+id/tv_letraMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/margem_50"
