@@ -19,9 +19,19 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        viewModel.getImage()
+        viewModel.getTitle()
+        viewModel.getSubTitle()
+        viewModel.getLyrics()
+        observables()
+
         binding.btnDetalhes.setOnClickListener {
             val intent = Intent(this, Detalhes::class.java)
             startActivity(intent)
         }
+    }
+
+    private fun observables(){
+
     }
 }
